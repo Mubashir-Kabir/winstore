@@ -2,6 +2,7 @@ import Carousel from "./components/carousel/Carousel";
 import Categories from "./components/categories/Categories";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import NewArrival from "./components/newArrival/NewArrival";
 import Subnavbar from "./components/subnav/Subnavbar";
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       </div>
       <div className="my-2">
         <Categories></Categories>
+      </div>
+      <div className="container">
+        <NewArrival></NewArrival>
       </div>
       <div>
         <Footer></Footer>

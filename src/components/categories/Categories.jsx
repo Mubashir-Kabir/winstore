@@ -11,7 +11,7 @@ const Categories = () => {
   return (
     <div className="row row-cols-1 row-cols-md-3 row-cols-lg-5 justify-content-evenly">
       {categories.map((category) => (
-        <CategoryCard category={category}></CategoryCard>
+        <CategoryCard category={category} key={category}></CategoryCard>
       ))}
     </div>
   );
