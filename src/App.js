@@ -1,3 +1,4 @@
+import BestDeals from "./components/bestDeals/BestDeals";
 import Carousel from "./components/carousel/Carousel";
 import Categories from "./components/categories/Categories";
 import Footer from "./components/footer/Footer";
@@ -20,6 +21,9 @@ function App() {
       </div>
       <div className="container">
         <NewArrival></NewArrival>
+      </div>
+      <div>
+        <BestDeals></BestDeals>
       </div>
       <div>
         <Footer></Footer>

@@ -8,10 +8,10 @@ const Footer = () => {
       <div className="row py-5 ps-2 ">
         <div className="col-12 col-md-6 col-lg-4  text-white">
           <img src={logo} alt="" className="w-50" />
-          <p className="text-primary m-1">Got questions? Call us 24/7!</p>
+          <p className="text-info m-1">Got questions? Call us 24/7!</p>
           <p className="m-0">03 111 666 144 </p>
           <p className="m-0">0317 1777015.</p>
-          <p className="text-primary m-1">Contact info </p>
+          <p className="text-info m-1">Contact info </p>
           <p className="m-0">info@winstore.pk</p>
           <div className="mt-2">
             <i className="fa-brands fa-facebook-f socialLogo"></i>
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-12 col-md-3 col-lg-2  text-white">
-          <p className="text-primary">Contact info </p>
+          <p className="text-info">Contact info </p>
           <p className="m-0">Installments</p>
           <p className="m-0">Electronics</p>
           <p className="m-0">Grocery</p>
@@ -30,7 +30,7 @@ const Footer = () => {
           <p className="m-0">Mobile Accessories</p>
         </div>
         <div className="col-12 col-md-3 col-lg-2 text-white">
-          <p className="text-primary">Information </p>
+          <p className="text-info">Information </p>
           <p className="m-0">About Us</p>
           <p className="m-0">Contact Us</p>
           <p className="m-0">FAQs</p>
@@ -39,7 +39,7 @@ const Footer = () => {
           <p className="m-0">Terms & Conditions</p>
         </div>
         <div className="col-12 col-md-3 col-lg-2 text-white">
-          <p className="text-primary">Customer Care </p>
+          <p className="text-info">Customer Care </p>
           <p className="m-0">My Account</p>
           <p className="m-0">Track Your Order</p>
           <p className="m-0">Recently Viewed</p>
