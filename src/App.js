@@ -1,9 +1,13 @@
 import Navbar from "./components/navbar/Navbar";
+import Subnavbar from "./components/subnav/Subnavbar";
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <div>
+        <Navbar></Navbar>
+        <Subnavbar></Subnavbar>
+      </div>
     </div>
   );
 }
