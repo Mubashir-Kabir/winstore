@@ -1,3 +1,4 @@
+import Carousel from "./components/carousel/Carousel";
 import Navbar from "./components/navbar/Navbar";
 import Subnavbar from "./components/subnav/Subnavbar";
 
@@ -7,6 +8,9 @@ function App() {
       <div>
         <Navbar></Navbar>
         <Subnavbar></Subnavbar>
+      </div>
+      <div>
+        <Carousel></Carousel>
       </div>
     </div>
   );
