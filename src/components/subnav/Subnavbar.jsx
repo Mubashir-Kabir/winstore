@@ -6,21 +6,21 @@ const Subnavbar = () => {
     <div className="subNav">
       <div>
         <p>
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
         </p>
-        <p>
-          <h4>Browse By Category</h4>
-        </p>
+
+        <h4>Browse By Category</h4>
+
         <p>Home</p>
         <p>Easy Monthly Installments</p>
         <p>Shop by Brands</p>
         <p>Become a Vendor</p>
       </div>
       <div>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-facebook-f"></i>
+        <i className="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-linkedin-in"></i>
+        <i className="fa-brands fa-twitter"></i>
       </div>
     </div>
   );

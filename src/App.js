@@ -1,4 +1,5 @@
 import Carousel from "./components/carousel/Carousel";
+import Categories from "./components/categories/Categories";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Subnavbar from "./components/subnav/Subnavbar";
@@ -12,6 +13,9 @@ function App() {
       </div>
       <div>
         <Carousel></Carousel>
+      </div>
+      <div className="my-2">
+        <Categories></Categories>
       </div>
       <div>
         <Footer></Footer>

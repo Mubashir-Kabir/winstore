@@ -3,13 +3,16 @@ import A from "../../resources/image-116.png";
 
 const Carousel = () => {
   return (
-    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
-      <div class="carousel-indicators">
+    <div
+      id="carouselExampleIndicators"
+      className="carousel carousel-dark slide"
+    >
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="0"
-          class="active"
+          className="active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -26,10 +29,10 @@ const Carousel = () => {
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active position-relative">
-          <img src={A} class="d-block w-100" alt="..." />
-          <div class="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
+      <div className="carousel-inner">
+        <div className="carousel-item active position-relative">
+          <img src={A} className="d-block w-100" alt="..." />
+          <div className="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.
@@ -38,9 +41,9 @@ const Carousel = () => {
             </p>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src={A} class="d-block w-100" alt="..." />
-          <div class="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
+        <div className="carousel-item">
+          <img src={A} className="d-block w-100" alt="..." />
+          <div className="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.
@@ -49,9 +52,9 @@ const Carousel = () => {
             </p>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src={A} class="d-block w-100" alt="..." />
-          <div class="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
+        <div className="carousel-item">
+          <img src={A} className="d-block w-100" alt="..." />
+          <div className="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.
@@ -62,22 +65,22 @@ const Carousel = () => {
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );

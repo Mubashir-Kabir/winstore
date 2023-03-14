@@ -14,10 +14,10 @@ const Footer = () => {
           <p className="text-primary m-1">Contact info </p>
           <p className="m-0">info@winstore.pk</p>
           <div className="mt-2">
-            <i class="fa-brands fa-facebook-f socialLogo"></i>
-            <i class="fa-brands fa-instagram socialLogo"></i>
-            <i class="fa-brands fa-linkedin-in socialLogo"></i>
-            <i class="fa-brands fa-twitter socialLogo"></i>
+            <i className="fa-brands fa-facebook-f socialLogo"></i>
+            <i className="fa-brands fa-instagram socialLogo"></i>
+            <i className="fa-brands fa-linkedin-in socialLogo"></i>
+            <i className="fa-brands fa-twitter socialLogo"></i>
           </div>
         </div>
         <div className="col-12 col-md-3 col-lg-2  text-white">
