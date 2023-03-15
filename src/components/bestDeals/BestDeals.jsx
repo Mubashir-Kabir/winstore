@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BestDealsCard from "../bestDealsCard/BestDealsCard";
 
 const BestDeals = () => {
   const afterGettingCategory = (data) => {
@@ -35,8 +36,10 @@ const BestDeals = () => {
           ))}
         </div>
       </div>
-      <div>
-        <h1>fgshjkd</h1>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 container mx-auto g-4 ">
+        {categoryBaseProducts.map((product) => (
+          <BestDealsCard product={product} key={product.id}></BestDealsCard>
+        ))}
       </div>
     </div>
   );

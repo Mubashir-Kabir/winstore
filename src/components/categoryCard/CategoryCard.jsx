@@ -6,7 +6,7 @@ const CategoryCard = ({ category }) => {
   return (
     <div className="col position-relative">
       <img className="position-relative w-100" src={placeholder} alt="" />
-      <p className="position-absolute categoryCardText shadow-lg bg-white">
+      <p className="position-absolute categoryCardText bg-opacity-75 shadow-lg bg-white">
         {category}
         <a className="ms-4 text-decoration-none" href="#">
           Shop
