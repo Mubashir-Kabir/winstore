@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../resources/logo.png";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/categories")
@@ -27,7 +27,7 @@ const Navbar = () => {
             </button>
             <ul className="dropdown-menu">
               {categories.map((category) => (
-                <li>
+                <li key={category}>
                   <a className="dropdown-item" href="#">
                     {category}
                   </a>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <i className="fa-regular fa-heart me-3 "></i>
             <i className="fa-solid fa-cart-shopping cartItemCountParent me-3 ">
               <span className="cartWithIcon">cart</span>
-              <span className="cartItemCount">3</span>
+              <span className="cartItemCount">{cart}</span>
             </i>
           </div>
         </div>

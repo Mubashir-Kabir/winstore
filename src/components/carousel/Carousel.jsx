@@ -41,7 +41,7 @@ const Carousel = () => {
               decisions.
             </p>
           </div>
-          <div class="carousel-caption d-block d-md-none">
+          <div className="carousel-caption d-block d-md-none">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.
@@ -60,7 +60,7 @@ const Carousel = () => {
               decisions.
             </p>
           </div>
-          <div class="carousel-caption d-block d-md-none">
+          <div className="carousel-caption d-block d-md-none">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.
@@ -79,7 +79,7 @@ const Carousel = () => {
               decisions.
             </p>
           </div>
-          <div class="carousel-caption d-block d-md-none">
+          <div className="carousel-caption d-block d-md-none">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.

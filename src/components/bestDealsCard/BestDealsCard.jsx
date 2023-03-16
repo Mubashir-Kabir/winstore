@@ -1,6 +1,6 @@
 import React from "react";
 
-const BestDealsCard = ({ product }) => {
+const BestDealsCard = ({ product, setCart, cart }) => {
   const { title, image, description, price, rating } = product;
   return (
     <div className="col">
@@ -32,7 +32,11 @@ const BestDealsCard = ({ product }) => {
           <button type="button" className="btn btn-info">
             Details
           </button>
-          <button type="button" className="btn btn-primary">
+          <button
+            onClick={() => setCart(cart + 1)}
+            type="button"
+            className="btn btn-primary"
+          >
             Add to cart
           </button>
         </div>

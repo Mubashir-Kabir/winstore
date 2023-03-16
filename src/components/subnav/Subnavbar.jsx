@@ -9,21 +9,21 @@ const Subnavbar = () => {
       .then((data) => setCategories(data));
   }, []);
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-      <div class="container-fluid subNav text-white ">
-        <div class="dropdown">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary ">
+      <div className="container-fluid subNav text-white ">
+        <div className="dropdown">
           <button
-            class="btn btn-outline-light dropdown-toggle"
+            className="btn btn-outline-light dropdown-toggle"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             <span className="d-none d-md-inline-block">Browse By</span> Category
           </button>
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             {categories.map((category) => (
-              <li>
-                <a class="dropdown-item" href="#">
+              <li key={category}>
+                <a className="dropdown-item" href="#">
                   {category}
                 </a>
               </li>
@@ -37,7 +37,7 @@ const Subnavbar = () => {
           <i className="fa-brands fa-twitter me-2"></i>
         </div>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -45,21 +45,25 @@ const Subnavbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fa-solid fa-bars text-white"></i>{" "}
+          <i className="fa-solid fa-bars text-white"></i>{" "}
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ">
-            <a class="nav-link active text-white" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav ">
+            <a
+              className="nav-link active text-white"
+              aria-current="page"
+              href="#"
+            >
               Home
             </a>
-            <a class="nav-link text-white" href="#">
+            <a className="nav-link text-white" href="#">
               Easy Monthly Installments
             </a>
-            <a class="nav-link text-white" href="#">
+            <a className="nav-link text-white" href="#">
               Shop by Brands
             </a>
-            <a class="nav-link text-white">Become a Vendor</a>
+            <a className="nav-link text-white">Become a Vendor</a>
           </div>
           <div className="d-none d-md-block">
             <i className="fa-brands fa-facebook-f ms-4 "></i>

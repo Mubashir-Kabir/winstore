@@ -1,7 +1,7 @@
 import React from "react";
 import "./NewArrivalCard.css";
 
-const NewArrivalCard = ({ product }) => {
+const NewArrivalCard = ({ product, setCart, cart }) => {
   const { title, image, price, category } = product;
 
   return (
@@ -23,7 +23,12 @@ const NewArrivalCard = ({ product }) => {
             </span>
             <span className="text-info">RS{price.toFixed(2)}</span>
           </p>
-          <button className="btn btn-info w-100 ">Add to cart</button>
+          <button
+            className="btn btn-info w-100 "
+            onClick={() => setCart(cart + 1)}
+          >
+            Add to cart
+          </button>
         </div>
       </div>
     </div>
