@@ -8,7 +8,7 @@ const NewArrivalCard = ({ product }) => {
     <div className="col">
       <div className="card h-100 px-2 position-relative">
         <p className="mb-0">{category} item</p>
-        <p className="card-title">
+        <p className="card-title text-info">
           {title.length > 17 ? <>{title.slice(0, 17)}...</> : title}
         </p>
         <img
@@ -19,9 +19,9 @@ const NewArrivalCard = ({ product }) => {
         <div className="card-body newArrivalCardBody">
           <p className="card-text d-flex justify-content-around">
             <span className="text-decoration-line-through">
-              ${(price + 5).toFixed(2)}
+              RS{(price + 5).toFixed(2)}
             </span>
-            <span className="text-info">{price.toFixed(2)}</span>
+            <span className="text-info">RS{price.toFixed(2)}</span>
           </p>
           <button className="btn btn-info w-100 ">Add to cart</button>
         </div>

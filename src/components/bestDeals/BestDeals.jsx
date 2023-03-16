@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BestDealsCard from "../bestDealsCard/BestDealsCard";
+import "./BestDeals.css";
 
 const BestDeals = () => {
   const afterGettingCategory = (data) => {
@@ -22,20 +23,41 @@ const BestDeals = () => {
   }, [category, categories]);
   console.log(categoryBaseProducts);
   return (
-    <div>
-      <div className="container d-flex justify-content-between align-items-center">
-        <div className="d-flex display-6">
-          <p className="text-info">Best </p>
-          <p>Deals</p>
+    <div className="mb-5">
+      <nav class="navbar navbar-expand-lg my-5">
+        <div class="container d-flex justify-content-between">
+          <div className="d-flex display-6 ">
+            <p className="text-info">Best </p>
+            <p>Deals</p>
+          </div>
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                {categories.map((cat) => (
+                  <p
+                    class="nav-link bestDealNav "
+                    onClick={() => setCategory(cat)}
+                    aria-current="page"
+                  >
+                    {cat}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="d-flex">
-          {categories.map((cat) => (
-            <p key={cat} onClick={() => setCategory(cat)} className="me-3">
-              {cat}
-            </p>
-          ))}
-        </div>
-      </div>
+      </nav>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 container mx-auto g-4 ">
         {categoryBaseProducts.map((product) => (
           <BestDealsCard product={product} key={product.id}></BestDealsCard>

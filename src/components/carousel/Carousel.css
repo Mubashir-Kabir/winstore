@@ -1,0 +1,8 @@
+.carouselBody {
+  top: 30%;
+  left: 20%;
+}
+.cImg {
+  min-height: 80vh;
+  object-fit: cover;
+}

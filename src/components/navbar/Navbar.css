@@ -31,6 +31,7 @@
   font-size: 20px;
   padding: 8px;
   border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
 }
 .navContact {
   font-size: 13px;

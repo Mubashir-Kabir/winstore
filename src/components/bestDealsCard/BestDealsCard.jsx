@@ -4,7 +4,7 @@ const BestDealsCard = ({ product }) => {
   const { title, image, description, price, rating } = product;
   return (
     <div className="col">
-      <div className="card h-100 position-relative">
+      <div className="card p-3 h-100 position-relative">
         <h5 className="card-title m-2 m-md-3 m-lg-4">
           {title.length > 40 ? <>{title.slice(0, 40)}...</> : title}
         </h5>

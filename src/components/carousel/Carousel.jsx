@@ -1,5 +1,6 @@
 import React from "react";
 import A from "../../resources/image-116.png";
+import "./Carousel.css";
 
 const Carousel = () => {
   return (
@@ -30,9 +31,17 @@ const Carousel = () => {
         ></button>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item active position-relative">
-          <img src={A} className="d-block w-100" alt="..." />
-          <div className="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
+        <div className="carousel-item active position-relative cImg">
+          <img src={A} className="d-block w-100 cImg" alt="..." />
+          <div className="position-absolute d-none d-md-block carouselBody w-25 mt-4 ms-4">
+            <h5>Shop Computer & experience</h5>
+            <p>
+              You cannot inspect quality into the product; it is already there.
+              I am not a product of my circumstances. I am a product of my
+              decisions.
+            </p>
+          </div>
+          <div class="carousel-caption d-block d-md-none">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.
@@ -41,9 +50,17 @@ const Carousel = () => {
             </p>
           </div>
         </div>
-        <div className="carousel-item">
-          <img src={A} className="d-block w-100" alt="..." />
-          <div className="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
+        <div className="carousel-item active position-relative cImg">
+          <img src={A} className="d-block w-100 cImg" alt="..." />
+          <div className="position-absolute d-none d-md-block carouselBody w-25 mt-4 ms-4">
+            <h5>Shop Computer & experience</h5>
+            <p>
+              You cannot inspect quality into the product; it is already there.
+              I am not a product of my circumstances. I am a product of my
+              decisions.
+            </p>
+          </div>
+          <div class="carousel-caption d-block d-md-none">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.
@@ -52,9 +69,17 @@ const Carousel = () => {
             </p>
           </div>
         </div>
-        <div className="carousel-item">
-          <img src={A} className="d-block w-100" alt="..." />
-          <div className="position-absolute d-none d-md-block top-0 start-0 w-25 mt-4 ms-4">
+        <div className="carousel-item active position-relative cImg">
+          <img src={A} className="d-block w-100 cImg" alt="..." />
+          <div className="position-absolute d-none d-md-block carouselBody w-25 mt-4 ms-4">
+            <h5>Shop Computer & experience</h5>
+            <p>
+              You cannot inspect quality into the product; it is already there.
+              I am not a product of my circumstances. I am a product of my
+              decisions.
+            </p>
+          </div>
+          <div class="carousel-caption d-block d-md-none">
             <h5>Shop Computer & experience</h5>
             <p>
               You cannot inspect quality into the product; it is already there.

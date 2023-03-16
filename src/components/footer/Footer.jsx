@@ -5,8 +5,8 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="row py-5 ps-2 ">
-        <div className="col-12 col-md-6 col-lg-4  text-white">
+      <div className="row py-5 ps-2 ms-3">
+        <div className="col-12 col-md-6 col-lg-4 ps-0 ps-md-5  text-white">
           <img src={logo} alt="" className="w-50" />
           <p className="text-info m-1">Got questions? Call us 24/7!</p>
           <p className="m-0">03 111 666 144 </p>
@@ -14,10 +14,10 @@ const Footer = () => {
           <p className="text-info m-1">Contact info </p>
           <p className="m-0">info@winstore.pk</p>
           <div className="mt-2">
-            <i className="fa-brands fa-facebook-f socialLogo"></i>
-            <i className="fa-brands fa-instagram socialLogo"></i>
-            <i className="fa-brands fa-linkedin-in socialLogo"></i>
-            <i className="fa-brands fa-twitter socialLogo"></i>
+            <i className="fa-brands fa-facebook-f ms-2 ms-md-0 socialLogo"></i>
+            <i className="fa-brands fa-instagram ms-2 ms-md-3 socialLogo"></i>
+            <i className="fa-brands fa-linkedin-in ms-2 ms-md-3 socialLogo"></i>
+            <i className="fa-brands fa-twitter ms-2 ms-md-3 socialLogo"></i>
           </div>
         </div>
         <div className="col-12 col-md-3 col-lg-2  text-white">
@@ -47,6 +47,9 @@ const Footer = () => {
           <p className="m-0">Compare</p>
           <p className="m-0">Become a Vendor</p>
         </div>
+      </div>
+      <div className="bg-dark text-light p-3 ">
+        <p className="ms-1 ms-md-5">© 2021 Winstore. All Rights Reserved.</p>
       </div>
     </footer>
   );
